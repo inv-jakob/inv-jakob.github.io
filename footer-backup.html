@@ -1,0 +1,79 @@
+<!-- <footer class="footer">
+            <section class="search">
+                <div class="content-wrapper">
+                    <form id="searchForm" class="search-form" onsubmit="submitForm(event)"> 
+                        <label for="searchField" class="search-label">Search the site</label> 
+                        <input type="search" class="input" name="search" id="searchField" value="" placeholder="Type keywords ...">
+                        <button type="submit" class="button button-cta is-default"><span class="cta-copy">Go</span></button> 
+                    </form>
+                </div>
+                <script>
+                    function submitForm(event) {
+                        event.preventDefault(); // Prevent the default form submission behavior
+            
+                        const searchField = document.getElementById("searchField");
+                        const searchTerm = encodeURIComponent(searchField.value.trim());
+                        const searchURL = `https://www.chep.com/us/en/search/${searchTerm}?page=0`;
+            
+                        // Navigate to the search results page
+                        window.location.href = searchURL;
+                    }
+                </script>
+            </section>
+            <section class="footer-sitemap"><div class="content-wrapper"><nav class="sitemap-navigation"><ul class="navigation-list"><li class="navigation-item"><input class="list-expander" id="item-1" type="checkbox"><label class="navigation-label" for="item-1"> <span class="title">Why CHEP?</span> </label><ul class="navigation-item-list"><li class=""> <a href="/us/en/why-chep/how-chep-works" class="link" data-drupal-link-system-path="node/147511">How CHEP Works</a> </li><li class=""> <a href="/us/en/why-chep/customer-success-stories" class="link" data-drupal-link-system-path="node/22181">Customer Success Stories</a> </li><li class=""> <span class="link">More Resources</span> </li><li class=""> <a href="/us/en/why-chep/connect-us/customer-service" class="link" data-drupal-link-system-path="node/151036">Connect with Us</a> </li></ul></li><li class="navigation-item"><input class="list-expander" id="item-2" type="checkbox"><label class="navigation-label" for="item-2"> <span class="title">Products</span> </label><ul class="navigation-item-list"><li class=""> <a href="/us/en/products/pallets/all-pallets" class="link" data-drupal-link-system-path="node/21141">Pallets</a> </li><li class=""> <a href="/us/en/products/intermediate-bulk-containers/all-containers" class="link" data-drupal-link-system-path="node/21671">Intermediate Bulk Containers</a> </li><li class=""> <a href="/us/en/products/automotive-containers/all-automotive-containers" class="link" data-drupal-link-system-path="node/23891">Automotive Containers</a> </li></ul></li><li class="navigation-item"><input class="list-expander" id="item-3" type="checkbox"><label class="navigation-label" for="item-3"> <span class="title">Services &amp; Solutions</span> </label><ul class="navigation-item-list"><li class=""> <a href="/us/en/services-solutions/industries-we-serve" class="link" data-drupal-link-system-path="node/151051">Industries We Serve</a> </li><li class=""> <a href="/us/en/services-solutions/our-competencies" class="link" data-drupal-link-system-path="node/21801">Our Competencies</a> </li></ul></li><li class="navigation-item"><input class="list-expander" id="item-4" type="checkbox"><label class="navigation-label" for="item-4"> <span class="title">Sustainability</span> </label><ul class="navigation-item-list"><li class=""> <a href="/us/en/sustainability/sustainability-goals-2025" class="link" data-drupal-link-system-path="node/151131">Sustainability Goals 2025</a> </li><li class=""> <a href="/us/en/sustainability/carbon-neutral-platforms" class="link" data-drupal-link-system-path="node/21811">Carbon Neutral Platforms</a> </li><li class=""> <a href="https://www.chep.com/sustainability/zero-waste-world" class="link">Zero Waste World</a> </li><li class=""> <a href="/us/en/sustainability/supplier-diversity" class="link" data-drupal-link-system-path="node/145488">Supplier Diversity</a> </li></ul></li><li class="navigation-item"><input class="list-expander" id="item-5" type="checkbox"><label class="navigation-label" for="item-5"> <span class="title">About</span> </label><ul class="navigation-item-list"><li class=""> <a href="/us/en/about" class="link is-active" data-drupal-link-system-path="node/23501">About Us</a> </li><li class=""> <a href="/us/en/about/newsroom-media/chep-news" class="link" data-drupal-link-system-path="node/68611">Newsroom &amp; Media</a> </li></ul></li><li class="navigation-item"><input class="list-expander" id="item-6" type="checkbox"><label class="navigation-label" for="item-6"> <span class="title">Careers</span> </label></li><li class="navigation-item"><input class="list-expander" id="item-5" type="checkbox"><label class="navigation-label" for="item-5"> <span class="title">Contact Us</span> </label><ul class="navigation-item-list"><li class=""> <a href="/us/en/forms/contact" target="_self" class="link" data-drupal-link-system-path="forms/contact">Contact Us</a> </li><li class=""> <a href="/us/en/locations" target="_self" class="link" data-drupal-link-system-path="locations">Locations</a> </li></ul></li></ul></nav></div></section>
+            <div class="footer-bottom">
+                <div class="first-section">
+                    <div class="links-wrapper">
+                        <nav class="footer-links">
+                            <ul class="navigation-list">
+                                <li class="navigation-item logo"> 
+                                    <a href="#" class="link logo">
+                                        <img src="/assets/images/CHEP_Footer-logo.png" />
+                                    </a> 
+                                </li>
+                                <li class="navigation-item"> 
+                                    <span class="link">© 2023 CHEP</span>
+                                </li>
+                                <li class="navigation-item">
+                                     <a href="https://www.chep.com/us/en/terms-use-3" target="_self" title="Terms of Use" class="link">Terms of Use</a> 
+                                </li>
+                                <li class="navigation-item"> 
+                                    <a href="https://www.chep.com/us/en/website-privacy-policy-2" target="_self" class="link">Website Privacy Notice</a> 
+                                </li>
+                                <li class="navigation-item"> 
+                                    <a href="http://www.brambles.com/" target="_self" class="link">Brambles</a> 
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="second-section">
+                    <div class="social-media-wrapper">
+                        <div class="social-media">
+                            <ul class="social-media-accounts">
+                                <li class="social-media">
+                                     <a href="https://twitter.com/chepna" target="_blank" class="link icon icon-socials-twitter" style="background-image: none;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M24 11c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.7-2.1.8-.6-.6-1.5-1-2.4-1-2.1 0-3.7 2-3.2 4-2.7-.1-5.1-1.4-6.8-3.4-.9 1.5-.4 3.4 1 4.4-.5 0-1-.2-1.5-.4 0 1.5 1.1 2.9 2.6 3.3-.5.1-1 .2-1.5.1.4 1.3 1.6 2.3 3.1 2.3-1.2.9-3 1.4-4.7 1.2 1.5.9 3.2 1.5 5 1.5 6.1 0 9.5-5.1 9.3-9.8.7-.4 1.3-1 1.7-1.7z"></path></svg>
+                                    </a> 
+                                </li>
+                                <li class="social-media"> 
+                                    <a href="https://www.linkedin.com/company/chep/" target="_blank" class="link icon icon-socials-linkedin" style="background-image: none;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M12.4 9.7c0 .9-.8 1.7-1.7 1.7S9 10.7 9 9.7c0-.9.8-1.7 1.7-1.7 1 0 1.7.8 1.7 1.7zm-.2 3H9.3V22h2.9v-9.3zm4.6 0H14V22h2.8v-4.9c0-1.3.6-2.1 1.8-2.1 1.1 0 1.6.7 1.6 2.1V22H23v-5.9c0-2.5-1.4-3.7-3.4-3.7s-2.8 1.5-2.8 1.5v-1.2z"></path></svg>
+                                    </a> 
+                                </li>
+                                <li class="social-media"> 
+                                    <a href="https://www.youtube.com/chepsupplychainsolutions" target="_blank" class="link icon icon-socials-youtube" style="background-image: none;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M23.9 13.1c-.3-2.1-1.1-2.4-2.8-2.5-2.4-.2-7.8-.2-10.1 0-1.7.1-2.5.4-2.8 2.5-.2 1.6-.2 4.3 0 5.9.3 2.1 1.1 2.4 2.8 2.5 2.4.2 7.8.2 10.1 0 1.7-.1 2.5-.4 2.8-2.5.1-1.6.1-4.4 0-5.9zm-9.5 5.1v-4.5l4.3 2.2-4.3 2.3z"></path></svg>
+                                    </a> 
+                                </li>
+                                <li class="social-media"> 
+                                    <a href="https://www.instagram.com/CHEP_global/" target="_blank" class="link icon icon-socials-instagram" style="background-image: none;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="26" height="26"><path d="M7.547 0C3.39 0 0 3.39 0 7.547v10.906C0 22.61 3.39 26 7.547 26h10.906C22.61 26 26 22.61 26 18.453V7.547C26 3.39 22.61 0 18.453 0zm0 2h10.906A5.53 5.53 0 0 1 24 7.547v10.906A5.53 5.53 0 0 1 18.453 24H7.547A5.53 5.53 0 0 1 2 18.453V7.547A5.53 5.53 0 0 1 7.547 2zM20.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM13 6c-3.855 0-7 3.145-7 7s3.145 7 7 7 7-3.145 7-7-3.145-7-7-7zm0 2c2.773 0 5 2.227 5 5s-2.227 5-5 5-5-2.227-5-5 2.227-5 5-5z"></path></svg>
+                                    </a> 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer> -->
