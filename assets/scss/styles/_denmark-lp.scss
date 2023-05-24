@@ -98,6 +98,53 @@
                     line-height: 24px;
                 }
             }
+            &.vh-normal{
+                height: 100%;
+            }
+            .form-container{
+                display: flex;
+                flex-direction: row;
+                // justify-content: center;
+                margin: auto;
+                padding: 40px;
+                @media only screen and (max-width: 860px) {
+                    flex-direction: column;
+                }
+                h2{
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 38px;
+                }
+                p{
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                .hero-content{
+                    max-width: 60%;
+                    width: 100%;
+                    padding-right: 80px;
+                    @media only screen and (max-width: 860px) {
+                        max-width: 100%;
+                    }
+                }
+                .hero-form{
+                    padding: 25px;
+                    border-radius: 10px;
+                    max-width: 40%;
+                    z-index: 3;
+                    background-color: #fff;
+                    display: flex;
+                    flex-direction: column;
+                    @media only screen and (max-width: 860px) {
+                        max-width: 100%;
+                    }
+                    .form, .form-row-wrap{
+                        flex-direction: column;
+                    }
+                }
+            }
         }
         &.left-right-split{
             .container{
@@ -316,7 +363,7 @@
             font-family: akzidenz-grotesk-pro,arial,sans-serif;
             font-weight: 400;
             font-size: 1.6rem;
-            display: block;
+            display: block; align-items: center;
             padding: 8px 0;
             color: currentColor
         }
@@ -584,3 +631,62 @@
 body{
     margin: 0;
 }
+
+
+.form-section, .dlp-hero{
+    .container{
+        .content-box{
+            padding: 65px;
+            justify-content: center;
+            @media only screen and (max-width: 1000px) {
+                padding: 40px 25px;
+            }
+            .half-content{
+                max-width: 50%;
+                padding-right: 65px;
+                @media only screen and (max-width: 1000px) {
+                    padding-right: 0px;
+                    max-width: 100%;
+                }
+
+            }
+        }
+    }
+    background-color: white;
+    .form {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .form-row-wrap {
+        display: flex;
+        justify-content: space-between;
+      
+        @media(max-width: 768px) {
+          flex-direction: column;
+        }
+      }
+      
+    .form-field {
+        flex: 1;
+        margin: 0.8em 0.5em;
+        
+      
+        label {
+          display: block;
+          margin-bottom: 0.8em;
+        }
+      
+        input[type="text"], input[type="email"], input[type="tel"] {
+          width: 100%;
+          padding: 1em;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+        }
+    }
+    .submit-button{
+        margin: 20px 0;
+        width: fit-content !important;
+    }
+}  
+  
